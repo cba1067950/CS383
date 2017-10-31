@@ -55,6 +55,15 @@ DJallTest:
 ############################################################################
 #Begin Joe
 
+#Update output
+JJDisplayOutput.o: src/joe/JJDisplayOutput.cpp inc/JJDisplayOutput.h
+	$(CPP) $(CPPFLAGS) -c src/joe/JJDisplayOutput.cpp
+
+#Ouput Test
+JJTestOutput.o: test/JJTestOutput.cpp test/JJTestOutput.h
+	$(CPP) $(CPPFLAGS) -c test/JJTestOutput.cpp
+	
+
 JJbuildTest: 
 JJallTest: 
 #End Joe
